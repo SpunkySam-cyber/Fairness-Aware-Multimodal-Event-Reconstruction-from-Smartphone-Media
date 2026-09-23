@@ -1,0 +1,33 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+node_modules
+video_event_reconstruction/research/tools/node_modules
+
+# media and generated data - not part of the code repo
+videos/
+phone_demo_photos/
+collected_photos/
+video_event_reconstruction/data/source_videos/
+video_event_reconstruction/data/experiment_01/scrambled_clips/
+video_event_reconstruction/data/experiment_02_two_second/clean_segments_private/
+video_event_reconstruction/data/experiment_01/model_inputs/
+video_event_reconstruction/data/experiment_01/model_runs/
+video_event_reconstruction/data/experiment_02_two_second/model_input/
+video_event_reconstruction/data/experiment_02_two_second/model_runs/
+video_event_reconstruction/data/experiment_02_two_second/standardized_references/
+video_event_reconstruction/data/experiment_02_two_second/qa/
+video_event_reconstruction/research/outputs/model_benchmark_20260914/manual_review_storyboards/
+
+# answer keys - never commit these
+**/PRIVATE_*
+
+# duplicate outputs and message drafts - not project code
+Claude outputs/
+video_event_reconstruction/research/outputs/model_benchmark_20260914/SIR_UPDATE.txt
+
+# internal instructions/context - not project code
+CLAUDE.md
+CONTEXT.md

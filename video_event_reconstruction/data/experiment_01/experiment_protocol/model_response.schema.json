@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://smartlabs.local/schemas/event-reconstruction-response.schema.json",
+  "title": "Event reconstruction response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["events"],
+  "properties": {
+    "events": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_id",
+          "event_description",
+          "ordered_clips",
+          "ordering_evidence",
+          "confidence"
+        ],
+        "properties": {
+          "event_id": {"type": "string", "minLength": 1},
+          "event_description": {"type": "string", "minLength": 1},
+          "ordered_clips": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^V(00[1-9]|01[0-9]|02[0-1])$"
+            }
+          },
+          "ordering_evidence": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {"type": "string", "minLength": 1}
+          },
+          "confidence": {"type": "number", "minimum": 0.0, "maximum": 1.0}
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,1914 @@
+{
+  "status": "complete_structured_single_reviewer_audit",
+  "created_at_utc": "2026-09-15T01:34:26.717500+00:00",
+  "reviewed_outputs": 84,
+  "rubric": {
+    "event_description": {
+      "2": "Correct complete activity and action direction.",
+      "1": "Correct object/domain but materially incomplete or reversed.",
+      "0": "Unrelated or incorrect."
+    },
+    "ordering_evidence": {
+      "2": "Both adjacent transitions are visibly supported.",
+      "1": "One transition is supported or the explanation is only partly consistent.",
+      "0": "Both are unsupported or materially contradict the clips."
+    }
+  },
+  "review_method": "Start/middle/end storyboard inspection of each reference event; one structured reviewer.",
+  "model_summaries": [
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "reviewed_event_outputs": 21,
+      "description_points": 39,
+      "description_points_possible": 42,
+      "description_accuracy_percent": 92.85714285714286,
+      "evidence_points": 39,
+      "evidence_points_possible": 42,
+      "evidence_quality_percent": 92.85714285714286
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "reviewed_event_outputs": 21,
+      "description_points": 39,
+      "description_points_possible": 42,
+      "description_accuracy_percent": 92.85714285714286,
+      "evidence_points": 33,
+      "evidence_points_possible": 42,
+      "evidence_quality_percent": 78.57142857142857
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "reviewed_event_outputs": 21,
+      "description_points": 39,
+      "description_points_possible": 42,
+      "description_accuracy_percent": 92.85714285714286,
+      "evidence_points": 32,
+      "evidence_points_possible": 42,
+      "evidence_quality_percent": 76.19047619047619
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "reviewed_event_outputs": 21,
+      "description_points": 39,
+      "description_points_possible": 42,
+      "description_accuracy_percent": 92.85714285714286,
+      "evidence_points": 24,
+      "evidence_points_possible": 42,
+      "evidence_quality_percent": 57.14285714285714
+    }
+  ],
+  "event_reviews": [
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 1,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "event_3",
+      "event_description": "Assembling parts of an office chair including backrest and base.",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "In V006 the backrest frame is aligned and partially screwed onto the mechanism, which is tightened before mounting to the base in V008.",
+        "In V008 the chair seat assembly is placed on the wheeled base, followed by armrest pad attachment in V013."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but V013 is a caster/base step and was incorrectly explained as a later armrest step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_01_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 1,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "event_1",
+      "event_description": "Restringing an electric guitar from tailpiece to peg winding.",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "In V021 the new string is threaded through the bridge, which is required before threading it through the headstock tuning post in V002.",
+        "In V002 the string is inserted into the tuning post by hand, which is followed by using a string winder tool in V014."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_01_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 1,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "event_6",
+      "event_description": "Preparing and deep-frying potato fries.",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "In V019 raw cut potatoes are rinsed in water, then dried with paper towels on a plate in V018.",
+        "In V018 the cut potatoes are dried off before being dropped into the hot oil pot in V009."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_01_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 1,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "event_2",
+      "event_description": "Making a paper pinwheel craft by folding, cutting, hole-punching, and pinning.",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "V004 shows folding the square paper diagonally, creating the crease guidelines cut and punched in V003.",
+        "V003 shows corner holes being punched, which are then brought to the center in V017."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_01_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 1,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "event_4",
+      "event_description": "Disassembling a door knob and latch mechanism.",
+      "ordered_clips": [
+        "V011",
+        "V012",
+        "V016"
+      ],
+      "ordering_evidence": [
+        "V011 shows unscrewing the knob rose screws, which allows pulling off the knobs in V012.",
+        "V012 shows removing the knobs and spindle from the door, which leaves the latch plate to be unscrewed in V016."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 0,
+      "review_note": "Identifies the door-lock components but describes removal/disassembly; the clips and reference show installation in the opposite direction.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_01_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 1,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "event_7",
+      "event_description": "Upgrading RAM and replacing the keyboard on a laptop.",
+      "ordered_clips": [
+        "V005",
+        "V007",
+        "V001"
+      ],
+      "ordering_evidence": [
+        "In V005 the top RAM module is unlatched and removed from the slot, making room to insert a new module in V007.",
+        "In V007 the new memory stick is seated, after which the keyboard above it is reinstalled into the laptop chassis in V001."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_01_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 1,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "event_5",
+      "event_description": "Planting a mango seed in a potted plant container.",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "In V015 the seed is placed sideways into the potting soil, which is then covered and compacted with soil in V020.",
+        "In V020 the soil covers the seed completely, which is followed by pouring water over the pot in V010."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_01_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 2,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "event_4",
+      "event_description": "Assembling an ergonomic office chair",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "V006 attaches the backrest structure to the seat using a hex key before V008 finishes tightening and mounts the upper chair assembly onto the wheeled base.",
+        "V008 mounts the main seat assembly onto the base before V013 adjusts or installs armrest components."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but V013 is a caster/base step and was incorrectly explained as a later armrest step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 2,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "event_1",
+      "event_description": "Restringing an electric guitar",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "V021 threads the strings through the tailpiece before V002 inserts the string through the tuning post.",
+        "V002 places the string into the peg hole manually before V014 winds it using a string winder tool."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 2,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "event_7",
+      "event_description": "Preparing and frying potato fries",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "V019 rinses cut raw potatoes in water before V018 dries the wet potato slices with paper towels.",
+        "V018 dries raw sliced potatoes before V009 adds the dry potatoes into hot frying oil."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 2,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "event_2",
+      "event_description": "Crafting a paper pinwheel",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "V004 shows folding the square paper to create diagonal creases before V003 cuts along the crease lines and punches corner holes.",
+        "V003 punches holes along cut corners before V017 folds the perforated corners inwards toward the center hole."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 2,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "event_5",
+      "event_description": "Removing door lock hardware from a wooden door",
+      "ordered_clips": [
+        "V011",
+        "V012",
+        "V016"
+      ],
+      "ordering_evidence": [
+        "V011 unscrews the interior mounting screw on the doorknob escutcheon before V012 pulls the doorknobs off both sides of the door.",
+        "V012 removes the doorknobs leaving the latch hole exposed before V016 unscrews and extracts the latch assembly from the door edge."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 0,
+      "review_note": "Identifies the door-lock components but describes removal/disassembly; the clips and reference show installation in the opposite direction.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 2,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "event_3",
+      "event_description": "Removing and upgrading RAM and reinstalling keyboard on an iBook laptop",
+      "ordered_clips": [
+        "V005",
+        "V007",
+        "V001"
+      ],
+      "ordering_evidence": [
+        "V005 shows releasing clips and ejecting an existing RAM stick before V007 inserts a replacement RAM stick into the slot.",
+        "V007 finishes securing the RAM module before V001 places the keyboard back into the laptop chassis."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 2,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "event_6",
+      "event_description": "Planting a mango seed in a flower pot",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "V015 inserts the mango seed sideways into the potting soil before V020 spreads and pats down soil over the seed.",
+        "V020 covers and flattens the soil over the seed before V010 waters the freshly potted seed."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 3,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "event_4",
+      "event_description": "Assembling an ergonomic office chair.",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "In V006 the backrest frame is aligned and screwed to the seat base; in V008 the screw is fully tightened and the chair body mounted onto the base cylinder.",
+        "In V008 the main chair assembly is mounted on the wheelbase; in V013 the armrest adjustments and accessories are assembled."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but V013 is a caster/base step and was incorrectly explained as a later armrest step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 3,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "event_2",
+      "event_description": "Restringing an electric guitar.",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "In V021 the new string is threaded through the tailpiece bridge, whereas in V002 it reaches the headstock and is inserted into the tuning post.",
+        "In V002 the string is fed through the tuning post hole, and in V014 a peg winder is used to wind up the installed string."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 3,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "event_5",
+      "event_description": "Preparing and deep-frying potato French fries.",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "In V019 raw cut potatoes are rinsed in a bowl of water; in V018 they are patted dry with paper towels.",
+        "In V018 the potatoes are dried on paper towels; in V009 they are placed into hot cooking oil to fry."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 3,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "event_3",
+      "event_description": "Crafting a paper pinwheel.",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "In V004 the square paper is folded to create crease lines; in V003 the paper is cut along creases and punched at corners.",
+        "In V003 the corners are punched with single holes; in V017 the punched corners are folded into the center."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 3,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "event_7",
+      "event_description": "Disassembling and removing a door knob and latch mechanism.",
+      "ordered_clips": [
+        "V011",
+        "V012",
+        "V016"
+      ],
+      "ordering_evidence": [
+        "In V011 the screws holding the knob rosette are loosened; in V012 the door knobs and spindle are pulled out of the door.",
+        "In V012 the knob is removed leaving the latch in the bore hole; in V016 the screws holding the latch plate are unscrewed to remove it."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 0,
+      "review_note": "Identifies the door-lock components but describes removal/disassembly; the clips and reference show installation in the opposite direction.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 3,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "event_1",
+      "event_description": "Replacing keyboard and RAM modules in a white laptop.",
+      "ordered_clips": [
+        "V005",
+        "V007",
+        "V001"
+      ],
+      "ordering_evidence": [
+        "In V005 the user removes an old RAM stick; in V007 a new RAM stick is inserted into the empty slot.",
+        "In V007 the RAM bay is accessed while in V001 the laptop's keyboard is reinstalled over the internal compartments."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-flash",
+      "model": "Gemini 3.8 Flash",
+      "run": 3,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "event_6",
+      "event_description": "Planting a mango seed in a flower pot.",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "In V015 the seed is placed into the potting soil; in V020 the soil is smoothed and patted down over the seed.",
+        "In V020 dry soil covers the seed; in V010 water is poured onto the soil."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-flash\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 1,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "event_4",
+      "event_description": "Assembling an office chair",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "The backrest is attached to the seat mechanism.",
+        "The chair is placed upright, and the headrest is attached."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but the explanation treats the caster/base clip V013 as a final headrest step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 1,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "event_2",
+      "event_description": "Restringing a guitar",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "The new string is inserted into the bridge.",
+        "The string is threaded through the tuning post and wound using a string winder."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 1,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "event_5",
+      "event_description": "Making french fries",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "The cut potatoes are washed in water.",
+        "The potatoes are dried with paper towels before being fried in oil."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 1,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "event_3",
+      "event_description": "Making a paper pinwheel",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "The paper is folded to create creases.",
+        "The corners are cut and punched, then folded into the center to form the pinwheel."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 1,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "event_7",
+      "event_description": "Removing a door knob",
+      "ordered_clips": [
+        "V011",
+        "V012",
+        "V016"
+      ],
+      "ordering_evidence": [
+        "The screws on the door knob are unscrewed.",
+        "The door knob is pulled out, and then the latch mechanism is unscrewed."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 0,
+      "review_note": "Correctly identifies a door knob, but describes removing it and gives transition evidence opposite to the installation sequence.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 1,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "event_1",
+      "event_description": "Replacing RAM in a laptop",
+      "ordered_clips": [
+        "V001",
+        "V005",
+        "V007"
+      ],
+      "ordering_evidence": [
+        "The keyboard is removed to access the internal components.",
+        "The old RAM module is removed, and a new one is inserted."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Correctly identifies RAM replacement, but describes V001 as keyboard removal and places it before RAM removal instead of final reassembly.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 1,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "event_6",
+      "event_description": "Planting a seed in a pot",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "The seed is placed in the soil.",
+        "The soil is patted down, and then the seed is watered."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 2,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "event_4",
+      "event_description": "Assembling an office chair",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "The person attaches the backrest to the seat mechanism.",
+        "The person attaches the seat to the base and then attaches the headrest."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but the explanation treats the caster/base clip V013 as a final headrest step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 2,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "event_2",
+      "event_description": "Restringing a guitar",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "The person threads the new string through the bridge.",
+        "The person inserts the string into the tuning post and then uses a string winder to tighten it."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 2,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "event_5",
+      "event_description": "Making french fries",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "The person washes the cut potatoes in water.",
+        "The person dries the potatoes on paper towels and then fries them in oil."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 2,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "event_3",
+      "event_description": "Making a paper pinwheel",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "The person folds the paper to create creases.",
+        "The person cuts along the creases and punches holes, then folds the corners to the center."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 2,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "event_7",
+      "event_description": "Removing a door knob",
+      "ordered_clips": [
+        "V011",
+        "V012",
+        "V016"
+      ],
+      "ordering_evidence": [
+        "The person unscrews the door knob.",
+        "The person removes the door knob and then unscrews the latch mechanism."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 0,
+      "review_note": "Correctly identifies a door knob, but describes removing it and gives transition evidence opposite to the installation sequence.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 2,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "event_1",
+      "event_description": "Replacing RAM in a laptop",
+      "ordered_clips": [
+        "V005",
+        "V007",
+        "V001"
+      ],
+      "ordering_evidence": [
+        "The person removes the old RAM sticks from the laptop.",
+        "The person inserts the new RAM sticks and then replaces the keyboard."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 2,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "event_6",
+      "event_description": "Planting a seed",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "The person places the seed in the soil.",
+        "The person covers the seed with soil and then waters it."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 3,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "event_4",
+      "event_description": "Assembling an office chair",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "The person attaches the backrest to the seat mechanism.",
+        "The person tightens the screws and then attaches the headrest."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but the explanation treats the caster/base clip V013 as a final headrest step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 3,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "event_2",
+      "event_description": "Restringing a guitar",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "The person threads the new string through the bridge.",
+        "The person inserts the string into the tuning post and then uses a string winder to tighten it."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 3,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "event_5",
+      "event_description": "Making french fries",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "The person washes the cut potatoes in water.",
+        "The person dries the potatoes on paper towels and then fries them in oil."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 3,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "event_3",
+      "event_description": "Making a paper pinwheel",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "The person folds the paper to create creases.",
+        "The person cuts along the creases and punches holes, then folds the corners to the center."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 3,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "event_7",
+      "event_description": "Removing a door knob",
+      "ordered_clips": [
+        "V011",
+        "V012",
+        "V016"
+      ],
+      "ordering_evidence": [
+        "The person unscrews the door knob.",
+        "The person removes the door knob and then unscrews the latch mechanism."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 0,
+      "review_note": "Correctly identifies a door knob, but describes removing it and gives transition evidence opposite to the installation sequence.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 3,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "event_1",
+      "event_description": "Replacing RAM in a laptop",
+      "ordered_clips": [
+        "V005",
+        "V007",
+        "V001"
+      ],
+      "ordering_evidence": [
+        "The person removes the old RAM sticks from the laptop.",
+        "The person inserts the new RAM sticks and then replaces the keyboard."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "gemini-pro",
+      "model": "Gemini 3.1 Pro",
+      "run": 3,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "event_6",
+      "event_description": "Planting a seed",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "The person places the seed in the soil.",
+        "The person covers the seed with soil and then waters it."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\gemini-pro\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 1,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "E4",
+      "event_description": "Assembling an ergonomic office chair from base to finished seat",
+      "ordered_clips": [
+        "V013",
+        "V006",
+        "V008"
+      ],
+      "ordering_evidence": [
+        "V013 shows casters being pressed into the bare five-star base, the first assembly step; V006 then shows the seat/back frame being joined and screwed together while that wheeled base sits ready nearby.",
+        "V006 ends with the frame components fastened on the floor; V008 shows the completed seat/back lifted upright and mounted onto the wheeled base, the final assembly stage."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_01_attempt_03"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 1,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "E2",
+      "event_description": "Restringing an electric guitar from bridge to tuned headstock",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "V021 shows a new string first threaded through the tailpiece/bridge; V002 then shows that string's far end being inserted and hand-wound onto a headstock tuning post, which requires the string to already be anchored at the bridge.",
+        "V002 shows the string loosely wrapped by hand; V014 shows a string winder tool being cranked on the same post to tighten and tune it, the final step after manual winding."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_01_attempt_03"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 1,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "E5",
+      "event_description": "Preparing French fries: soaking cut potatoes, drying them, then frying",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "V019 shows raw cut potatoes being rinsed/soaked in a bowl of water; V018 then shows the same wet cut potatoes laid on paper towels and patted dry, which follows soaking.",
+        "V018 ends with dried raw sticks on the towel; V009 shows those sticks being dropped into hot oil to fry, the cooking step after drying."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_01_attempt_03"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 1,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "E3",
+      "event_description": "Making a paper pinwheel: folding, cutting, punching holes, and folding blades to center",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "V004 shows the plain square being diagonally folded to create crease marks; V003 then shows those creases already present while cuts are made along them and corner holes are punched.",
+        "V003 ends with cut slits and punched corner holes visible; V017 shows those same holed corners being folded inward to the center to form the pinwheel blades."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_01_attempt_03"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 1,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "E7",
+      "event_description": "Installing a door knob and latch hardware on a wooden door",
+      "ordered_clips": [
+        "V016",
+        "V012",
+        "V011"
+      ],
+      "ordering_evidence": [
+        "V016 shows the latch bolt plate being screwed into the door edge first; V012 then shows the knob spindle being inserted through the door hole to engage that already-installed latch.",
+        "V012 shows the knob halves being fitted onto the spindle; V011 shows a screwdriver tightening the mounting screw on the assembled knob rosette, the final securing step."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_01_attempt_03"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 1,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "E1",
+      "event_description": "Reinstalling the keyboard onto a white iBook G4 laptop",
+      "ordered_clips": [
+        "V001",
+        "V005",
+        "V007"
+      ],
+      "ordering_evidence": [
+        "V001 shows the keyboard being laid back down and pressed into the open top case, leaving the internal bay accessible; V005 then shows a RAM module already seated in that bay being lifted out, a step that follows keyboard placement.",
+        "V005 ends with the module pulled up at an angle; V007 begins with the empty slot and the same hand inserting a module at the matching angle and pressing it flat, completing the seating action."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Description focuses on reinstalling the keyboard and omits the central RAM replacement; only part of the evidence aligns with the submitted clip order.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_01_attempt_03"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 1,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "E6",
+      "event_description": "Planting a mango seed in a pot of soil and watering it",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "V015 shows the seed placed on the soil surface; V020 then shows a hand pressing soil over it to bury and cover the seed, which requires the seed to already be positioned.",
+        "V020 ends with the seed fully covered by dry-looking soil; V010 shows water being poured onto that same covered soil surface, the watering step after burial."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_01_attempt_03"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 2,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "event_4",
+      "event_description": "A woman assembles an ergonomic office chair, attaching casters, joining the seat and back frames, and mounting the base.",
+      "ordered_clips": [
+        "V013",
+        "V006",
+        "V008"
+      ],
+      "ordering_evidence": [
+        "V013 shows casters being pressed into the bare five-star base legs, a prerequisite before the base can support the chair body.",
+        "V006 shows the seat and backrest frames being bolted together on the floor, and V008 follows with that joined body being lifted and fixed onto the now-wheeled base."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 2,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "event_2",
+      "event_description": "A person replaces the strings on a Greco electric guitar, from anchoring the string at the bridge to winding it at the headstock.",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "V021 shows the new string first being threaded through the tailpiece/bridge at the body ('place the new strings'), which must happen before the string reaches the headstock.",
+        "V002 shows the string being inserted and hand-wound at the tuning post, and V014 follows with a string winder tool rapidly tightening the already-threaded post ('use the string winder')."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 2,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "event_5",
+      "event_description": "A person prepares potato fries by cutting, soaking/rinsing, and drying the strips on paper towels before frying.",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "V019 shows the cut strips being handled in a bowl of water (soaking/rinsing), which precedes drying.",
+        "V018 shows the wet strips being patted dry on paper towels, and V009 follows with the dried strips being dropped into hot oil ('fry at 275\u00b0F')."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 2,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "event_3",
+      "event_description": "A person makes a paper pinwheel by folding, cutting, punching holes, and folding the corners of an orange square.",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "V004 shows the plain square being folded diagonally to create crease marks, which exist as visible diagonal lines when V003 begins cutting along them.",
+        "V003 ends after the corner cuts and hole-punching, and V017 shows those punched corner holes being folded inward toward the center to form the pinwheel blades."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 2,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "event_7",
+      "event_description": "A person installs a door knob set, screwing in the latch, inserting the knob spindle, and tightening the rose screws.",
+      "ordered_clips": [
+        "V016",
+        "V012",
+        "V011"
+      ],
+      "ordering_evidence": [
+        "V016 shows the latch mechanism being screwed into the door edge, a prerequisite before the knob spindle can pass through it.",
+        "V012 shows the knob half with its spindle being inserted through the door hole, and V011 follows with a screwdriver tightening the rose screw to secure the assembled knob."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 2,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "event_1",
+      "event_description": "A person reassembles a white iBook G4 laptop by snapping the keyboard back into the chassis.",
+      "ordered_clips": [
+        "V001",
+        "V005",
+        "V007"
+      ],
+      "ordering_evidence": [
+        "V005 shows a Samsung RAM module being lifted out of the bottom memory bay, exposing the slot, which precedes V007 where a module is angled in and pressed down to click into that same slot.",
+        "After the internal memory work in V007, V001 shows the top keyboard panel being lowered and snapped back onto the open laptop body, the final reassembly step."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Description focuses on reinstalling the keyboard and omits the central RAM replacement; only part of the evidence aligns with the submitted clip order.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 2,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "event_6",
+      "event_description": "A person plants a seed in a pot of soil, covering it and then watering it lightly.",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "V015 shows the seed being placed on the soil surface, which must occur before V020 where soil is patted over it to bury it.",
+        "V020 ends with the seed covered by dry-looking soil, and V010 follows with water being poured onto that soil ('water the seed, but not too much')."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 3,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "E4",
+      "event_description": "An ergonomic office chair is assembled: casters are pressed into the star base, the seat and back frame are joined and bolted together, then the assembled body is mounted onto the wheeled base.",
+      "ordered_clips": [
+        "V013",
+        "V006",
+        "V008"
+      ],
+      "ordering_evidence": [
+        "V013 shows individual casters being pushed into the bare five-star base, the first assembly step before any upper parts exist.",
+        "V006 shows the seat and backrest frame being aligned and tightened together with a tool while still off the base, and V008 shows the completed upper body being lowered onto the now-wheeled base."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 3,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "E2",
+      "event_description": "New strings are fitted to a Greco electric guitar: the string is anchored at the bridge, threaded and wound by hand at the headstock tuning post, then tightened with a string winder.",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "V021 shows the new string first being placed through the bridge/tailpiece at the guitar body, which must precede any work at the headstock.",
+        "V002 shows the string being inserted and hand-wound at the tuning post, and V014 follows with the string winder being used to finish tightening that same post."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 3,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "E5",
+      "event_description": "French fries are prepared: cut potato sticks are rinsed in water, dried on paper towels, then added to a pot of oil to fry.",
+      "ordered_clips": [
+        "V019",
+        "V018",
+        "V009"
+      ],
+      "ordering_evidence": [
+        "V019 shows the raw cut potatoes being washed and stirred in a bowl of water, which precedes drying.",
+        "V018 shows the wet sticks being patted dry on paper towels, and V009 follows with the dried sticks being dropped into hot oil to fry."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 3,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "E3",
+      "event_description": "A paper pinwheel is made from an orange square: the square is folded into diagonal creases, the diagonals are cut and holes punched, then the corners are folded into the center to form blades.",
+      "ordered_clips": [
+        "V004",
+        "V003",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "V004 starts from an intact square being folded to create the diagonal crease lines, with no cuts or holes yet present.",
+        "V003 shows cuts being made along those creases and holes punched at the corners, and V017 shows the already-cut, holed square having its corners folded into the center to form the pinwheel blades."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 3,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "E7",
+      "event_description": "A brass doorknob and latch are installed on a wooden door: the latch plate is screwed into the door edge, the knob assembly is fitted through the bore, then its mounting screws are tightened.",
+      "ordered_clips": [
+        "V016",
+        "V012",
+        "V011"
+      ],
+      "ordering_evidence": [
+        "V016 shows the latch mechanism being screwed into the edge of the door, which must exist before the knob spindle can pass through it.",
+        "V012 shows the knob half being slid onto the spindle through the door bore, and V011 follows with a screwdriver tightening the knob's mounting screw to secure it."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 3,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "E1",
+      "event_description": "A white laptop keyboard is reinstalled onto an iBook G4 by aligning it over the exposed metal frame and pressing it down into place.",
+      "ordered_clips": [
+        "V001",
+        "V005",
+        "V007"
+      ],
+      "ordering_evidence": [
+        "V001 shows the white keycap assembly being lowered and seated onto the bare metal keyboard well, establishing the laptop model and open-chassis state.",
+        "V005 shows a Samsung RAM module being lifted out of the bottom access bay, an internal step that follows opening the chassis, and V007 shows a replacement module being inserted and pressed flat into the same bay."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Description focuses on reinstalling the keyboard and omits the central RAM replacement; only part of the evidence aligns with the submitted clip order.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "qwen-max",
+      "model": "Qwen3.8-Max",
+      "run": 3,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "E6",
+      "event_description": "A seed is planted in a pot of potting soil: the seed is placed on its side, covered over with soil, then lightly watered.",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "V015 shows the seed first being laid on the soil surface, before any covering.",
+        "V020 shows soil being pushed over the seed to bury it, and V010 follows with water being poured onto the now-covered soil."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\qwen-max\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 1,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "E4",
+      "event_description": "Assembling an office chair",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "V006 shows attaching the chair backrest to the seat base with a screwdriver, an early assembly step.",
+        "V008 shows the partially assembled chair standing on its base with the backrest installed, a later assembly stage. V013 shows attaching a caster wheel to a chair arm component, a final assembly step for the chair parts."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but V013 shows installing a caster on the base and is incorrectly treated as a final step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 1,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "E2",
+      "event_description": "Restringing an electric guitar",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "V021 shows the new string being placed at the guitar's bridge, the first step of restringing.",
+        "V002 shows the string being inserted and wound at the headstock tuning post, which follows securing the string at the bridge. V014 shows using a string winder to tighten the string at the tuning post, the final step of securing the new string."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 1,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "E5",
+      "event_description": "Frying French fries",
+      "ordered_clips": [
+        "V019",
+        "V009",
+        "V018"
+      ],
+      "ordering_evidence": [
+        "V019 shows placing raw potato strips into hot oil, the first step of frying.",
+        "V009 shows the fries cooking in the oil with a specified frying temperature, the active cooking step after placing the fries in oil. V018 shows the fried fries being drained on paper towels, the final step after frying is complete."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 0,
+      "review_note": "French-fries description is correct, but the explanation mistakes soaking water for hot oil and raw strips being dried for cooked fries being drained.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 1,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "E3",
+      "event_description": "Making a paper pinwheel",
+      "ordered_clips": [
+        "V003",
+        "V017",
+        "V004"
+      ],
+      "ordering_evidence": [
+        "V003 shows cutting slits and punching holes in a square sheet of paper, the initial preparation steps for a pinwheel.",
+        "V017 shows folding the cut corners of the paper into the center to form the pinwheel shape, which follows cutting the slits. V004 shows folding the paper into a triangle, a foundational fold step that supports the pinwheel structure."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Paper-pinwheel description is correct, but one transition places folding the intact square after cutting rather than before it.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 1,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "E7",
+      "event_description": "Installing a door lock set",
+      "ordered_clips": [
+        "V016",
+        "V011",
+        "V012"
+      ],
+      "ordering_evidence": [
+        "V016 shows screwing the latch strike plate into the door edge, the first step of lock installation.",
+        "V011 shows using a tool to work on the interior of the door knob assembly, which follows installing the latch. V012 shows placing the exterior door knob onto the door spindle, the final step of assembling the lock set."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Door-lock installation is identified correctly, but the second transition reverses insertion and final tightening.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 1,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "E1",
+      "event_description": "Installing a laptop keyboard",
+      "ordered_clips": [
+        "V001",
+        "V005",
+        "V007"
+      ],
+      "ordering_evidence": [
+        "V001 shows the keyboard being placed onto the laptop body as the initial installation step.",
+        "V005 and V007 show the internal RAM compartment of the same laptop, with V005 showing RAM removal and V007 showing RAM reinstallation, representing internal hardware work that occurs alongside keyboard servicing on the same device."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Description over-focuses on keyboard installation; the RAM removal-to-install observation is useful but does not support the submitted keyboard-first order.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 1,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "E6",
+      "event_description": "Planting a seed in a pot",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "V015 shows placing the seed on top of the potting soil, the first step of planting.",
+        "V020 shows pressing soil over the seed to cover it, which follows placing the seed. V010 shows watering the planted seed, the final step after the seed is covered with soil."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_01_attempt_02"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 2,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "E4",
+      "event_description": "Assembling an office chair",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "V006 shows the chair backrest being attached to the seat with a screwdriver, the initial structural assembly step.",
+        "V008 shows the assembled seat and back being placed onto the chair base with wheels, which follows attaching the backrest to the seat; V013 shows a caster wheel being installed onto a chair leg, a final component assembly step."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but V013 shows installing a caster on the base and is incorrectly treated as a final step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 2,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "E2",
+      "event_description": "Replacing and tuning guitar strings",
+      "ordered_clips": [
+        "V021",
+        "V002",
+        "V014"
+      ],
+      "ordering_evidence": [
+        "V021 shows new strings being placed at the guitar's bridge, the first step of string installation.",
+        "V002 shows strings being inserted and wound at the headstock tuning posts, which follows securing the strings at the bridge; V014 shows a string winder being used to tighten the strings, the final tuning step after initial winding."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 2,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "E5",
+      "event_description": "Frying potato strips in oil",
+      "ordered_clips": [
+        "V019",
+        "V009",
+        "V018"
+      ],
+      "ordering_evidence": [
+        "V019 shows raw potato strips being placed into hot oil, the start of the frying process.",
+        "V009 shows potato strips frying in bubbling oil with a temperature indicator, which follows placing the strips into oil; V018 shows fried potato strips being dried on paper towel, the post-frying step after cooking is complete."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 0,
+      "review_note": "French-fries description is correct, but the explanation mistakes soaking water for hot oil and raw strips being dried for cooked fries being drained.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 2,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "E3",
+      "event_description": "Making a paper pinwheel from orange paper",
+      "ordered_clips": [
+        "V003",
+        "V004",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "V003 shows holes being punched and cuts being made on the orange square paper, the initial preparation steps for the pinwheel.",
+        "V004 shows the paper being folded into a triangle, a folding step that follows cutting the paper; V017 shows the paper corners being folded and pinned to form the final pinwheel shape, the last assembly step."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Paper-pinwheel description is correct, but one transition places folding the intact square after cutting rather than before it.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 2,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "E7",
+      "event_description": "Installing a door lock set",
+      "ordered_clips": [
+        "V016",
+        "V012",
+        "V011"
+      ],
+      "ordering_evidence": [
+        "V016 shows the latch mechanism being screwed into the door edge, the first step of lock installation.",
+        "V012 shows the interior doorknob assembly being inserted into the door hole, which follows installing the latch; V011 shows a tool being used on the exterior doorknob's screw, the final step of securing the lock assembly."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 2,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "E1",
+      "event_description": "Installing a laptop keyboard and handling its RAM module",
+      "ordered_clips": [
+        "V001",
+        "V005",
+        "V007"
+      ],
+      "ordering_evidence": [
+        "V001 shows the keyboard being placed onto the laptop body, which is the initial step of assembling the laptop's input component.",
+        "V005 shows a RAM stick being removed from the laptop's internal slot, which occurs after the keyboard is removed/handled to access internal components; V007 shows a new RAM stick being installed into the same slot, following the removal step."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Description over-focuses on keyboard installation; the RAM removal-to-install observation is useful but does not support the submitted keyboard-first order.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 2,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "E6",
+      "event_description": "Planting a seed in a pot of soil",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "V015 shows a seed being placed into the potting soil, the initial planting step.",
+        "V020 shows soil being pressed down over the seed to cover it, which follows placing the seed in the soil; V010 shows water being poured onto the soil, the final step of watering the planted seed."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_02_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 3,
+      "truth_event_id": "E01",
+      "reference_activity": "AssembleOfficeChair",
+      "predicted_event_id": "E4",
+      "event_description": "Assembling an office chair",
+      "ordered_clips": [
+        "V006",
+        "V008",
+        "V013"
+      ],
+      "ordering_evidence": [
+        "V006 shows attaching the chair backrest to the seat base with a screwdriver, an early assembly step.",
+        "V008 shows the partially assembled chair standing on its base with the backrest installed, which follows backrest attachment. V013 shows attaching a caster wheel to the chair arm/leg, a later assembly step."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Office-chair description is correct, but V013 shows installing a caster on the base and is incorrectly treated as a final step.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 3,
+      "truth_event_id": "E02",
+      "reference_activity": "ChangeGuitarStrings",
+      "predicted_event_id": "E2",
+      "event_description": "Restringing an electric guitar",
+      "ordered_clips": [
+        "V002",
+        "V014",
+        "V021"
+      ],
+      "ordering_evidence": [
+        "V002 shows inserting a new string into the tuning post at the headstock, the first step of restringing.",
+        "V014 shows using a string winder to tighten the string on the tuning post, which occurs after the string is inserted. V021 shows placing the string at the guitar's bridge, the final step of securing the new string."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Guitar restringing is identified correctly, but the bridge anchoring clip V021 is incorrectly placed after headstock winding.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 3,
+      "truth_event_id": "E03",
+      "reference_activity": "MakeFrenchFries",
+      "predicted_event_id": "E5",
+      "event_description": "Frying potato strips (fries)",
+      "ordered_clips": [
+        "V019",
+        "V009",
+        "V018"
+      ],
+      "ordering_evidence": [
+        "V019 shows placing raw potato strips into hot oil, the start of the frying process.",
+        "V009 shows the potato strips frying in bubbling oil, which occurs after they are placed in the oil. V018 shows the fried strips being drained on paper towels, the final step after frying is complete."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 0,
+      "review_note": "French-fries description is correct, but the explanation mistakes soaking water for hot oil and raw strips being dried for cooked fries being drained.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 3,
+      "truth_event_id": "E04",
+      "reference_activity": "MakePaperWindMill",
+      "predicted_event_id": "E3",
+      "event_description": "Making an orange paper pinwheel",
+      "ordered_clips": [
+        "V003",
+        "V004",
+        "V017"
+      ],
+      "ordering_evidence": [
+        "V003 shows punching holes and cutting slits in the square orange paper, the initial preparation steps.",
+        "V004 shows folding the paper into a triangle as part of shaping the pinwheel, which follows cutting. V017 shows folding the cut corners to the center to form the final pinwheel shape."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Paper-pinwheel description is correct, but one transition places folding the intact square after cutting rather than before it.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 3,
+      "truth_event_id": "E05",
+      "reference_activity": "ReplaceDoorKnob",
+      "predicted_event_id": "E7",
+      "event_description": "Installing a door lock set",
+      "ordered_clips": [
+        "V016",
+        "V011",
+        "V012"
+      ],
+      "ordering_evidence": [
+        "V016 shows screwing the latch mechanism into the door edge, the first step of lock installation.",
+        "V011 shows using a tool on the exterior knob's screw hole, which occurs after the latch is installed to secure the knob. V012 shows placing the interior knob onto the lock spindle, the final assembly step."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Door-lock installation is identified correctly, but V011 tightening is placed before V012 knob insertion.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 3,
+      "truth_event_id": "E06",
+      "reference_activity": "ReplaceMemoryChip",
+      "predicted_event_id": "E1",
+      "event_description": "Installing a laptop keyboard",
+      "ordered_clips": [
+        "V001",
+        "V005",
+        "V007"
+      ],
+      "ordering_evidence": [
+        "V001 shows the keyboard being placed onto the laptop body as the initial step of installation.",
+        "V005 and V007 show internal RAM access after the keyboard area is opened, consistent with the keyboard being fully installed first to access internal components."
+      ],
+      "description_score_0_to_2": 1,
+      "evidence_score_0_to_2": 1,
+      "review_note": "Description over-focuses on keyboard installation; the RAM removal-to-install observation is useful but does not support the submitted keyboard-first order.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_03_attempt_01"
+    },
+    {
+      "model_alias": "seed-turbo",
+      "model": "Seed 2.1 Turbo",
+      "run": 3,
+      "truth_event_id": "E07",
+      "reference_activity": "Sow",
+      "predicted_event_id": "E6",
+      "event_description": "Planting a seed in a pot",
+      "ordered_clips": [
+        "V015",
+        "V020",
+        "V010"
+      ],
+      "ordering_evidence": [
+        "V015 shows placing the seed on top of the potting soil, the first step of planting.",
+        "V020 shows pressing soil over the seed to cover it, which follows placing the seed. V010 shows watering the soil after the seed is planted, the final step."
+      ],
+      "description_score_0_to_2": 2,
+      "evidence_score_0_to_2": 2,
+      "review_note": "The event description matches the visible activity and both transition explanations are consistent with the adjacent clips.",
+      "source_result_directory": "data\\experiment_01\\model_runs\\seed-turbo\\run_03_attempt_01"
+    }
+  ]
+}

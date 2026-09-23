@@ -1,0 +1,5 @@
+﻿model_alias,model,provider,successful_runs,input_form,reasoning_effort,mean_grouping_pairwise_f1,mean_adjusted_rand_index,mean_exact_groups,mean_exact_orders,minimum_exact_orders,maximum_exact_orders,mean_exact_order_rate,exact_order_rate_stddev,mean_kendall_tau,mean_latency_seconds,total_successful_cost_usd,mean_successful_cost_usd,run_order_scores
+qwen-max,qwen/qwen3.8-max-0902,Alibaba,3,individual,low,1.0,1.0,7.0,6.0,6.0,6.0,0.857143,0.0,0.809524,103.10866666666666,0.474746,0.15824866666666668,"6,6,6"
+gemini-flash,google/gemini-3.8-flash,Google AI Studio,3,composite,low,1.0,1.0,7.0,5.0,5.0,5.0,0.714286,0.0,0.52381,11.574333333333334,0.023691824999999996,0.007897274999999999,"5,5,5"
+gemini-pro,google/gemini-3.1-pro-preview,Google AI Studio,3,composite,low,1.0,1.0,7.0,4.666666666666667,4.0,5.0,0.666667,0.06734343562664442,0.4603176666666667,20.526,0.0640584,0.021352799999999998,"4,5,5"
+seed-turbo,bytedance-seed/seed-2-1-turbo,Seed,3,composite,none,1.0,1.0,7.0,2.0,1.0,3.0,0.285714,0.11664225206159215,0.269841,29.795333333333332,0.077555,0.025851666666666665,"2,3,1"

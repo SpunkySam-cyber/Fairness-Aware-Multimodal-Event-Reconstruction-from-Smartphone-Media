@@ -1,0 +1,43 @@
+{
+  "registry_checked_date": "2026-09-13",
+  "primary_condition": "visual_only",
+  "repetitions_per_model": 3,
+  "models": [
+    {
+      "display_name": "Qwen3.8-Max",
+      "provider": "Alibaba Model Studio",
+      "model_id": "qwen3.8-max",
+      "input_form": "21 separate standardized clips",
+      "status": "selected"
+    },
+    {
+      "display_name": "Gemini 3.1 Pro",
+      "provider": "Google",
+      "model_id": "gemini-3.1-pro-preview",
+      "input_form": "one labelled composite video",
+      "status": "selected"
+    },
+    {
+      "display_name": "Gemini 3.8 Flash",
+      "provider": "Google",
+      "model_id": "gemini-3.8-flash",
+      "input_form": "one labelled composite video",
+      "status": "selected"
+    },
+    {
+      "display_name": "InternVideo3-8B-Instruct",
+      "provider": "OpenGVLab/open weights",
+      "model_id": "yanziang/InternVideo3-8B-Instruct",
+      "input_form": "21 standardized clips or an equivalent local batch",
+      "status": "selected"
+    },
+    {
+      "display_name": "Seed2.1 Pro",
+      "provider": "ByteDance Seed / Volcano Engine",
+      "model_id": "confirm_at_run_time",
+      "input_form": "provider-supported video input",
+      "status": "selected_pending_access",
+      "fallback": "Cosmos-Reason2-8B"
+    }
+  ]
+}

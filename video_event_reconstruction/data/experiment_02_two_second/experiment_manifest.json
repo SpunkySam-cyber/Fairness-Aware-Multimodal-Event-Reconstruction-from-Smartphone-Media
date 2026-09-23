@@ -1,0 +1,90 @@
+{
+  "created_at_utc": "2026-09-18T03:50:55.913637+00:00",
+  "segment_seconds": 2.0,
+  "shuffle_seed": 20260918,
+  "source_video_count": 7,
+  "total_clip_count": 509,
+  "total_source_duration_seconds": 1015.486,
+  "total_segment_duration_seconds": 1014.583,
+  "model_input": {
+    "filename": "model_input\\scrambled_509_clips_labelled.mp4",
+    "size_bytes": 10659087,
+    "sha256": "63d5038612953655c9cb8c8929090ec59a11d9c7dbd1f537d8c57effb6c3e012",
+    "audio_removed": true,
+    "width": 480,
+    "height": 270,
+    "fps": 8
+  },
+  "sources": [
+    {
+      "event_id": "E01",
+      "activity": "AssembleOfficeChair",
+      "filename": "ERGOHUMAN BASE mesh - Assembly.mp4",
+      "source_duration_seconds": 117.672,
+      "standardized_duration_seconds": 117.583,
+      "segment_count": 59,
+      "source_sha256": "000c2cba217772f0b543f7d5e1f80ac084ece8fa8210727550c90413654e4bfa",
+      "reference_sha256": "e73832d5548cbf55dbac27b78dc54302a1236d84febe8b61d25c8059c085c410"
+    },
+    {
+      "event_id": "E02",
+      "activity": "ChangeGuitarStrings",
+      "filename": "Palit-Kwerdas (String change).mp4",
+      "source_duration_seconds": 187.256,
+      "standardized_duration_seconds": 187.166,
+      "segment_count": 94,
+      "source_sha256": "2d200e45e5509ca1d0b4498b48e497ec2ae06dc68a143f4d7d4c9b483b61caf4",
+      "reference_sha256": "300955a8702dc2cdc3c1deaee7d09472fc2127c43ef67dc8f879553612d7b1c8"
+    },
+    {
+      "event_id": "E03",
+      "activity": "MakeFrenchFries",
+      "filename": "French Fries - How to Make Crispy French Fries.mp4",
+      "source_duration_seconds": 225.453,
+      "standardized_duration_seconds": 225.417,
+      "segment_count": 113,
+      "source_sha256": "f076ec02148dd635a03f59b372a8de31cbe14ddf0a1931e3cb4abc8c1b7b09af",
+      "reference_sha256": "7ad0db86698242268a16981f2daa974b1a89226e50802f78af4d55997dc01f06"
+    },
+    {
+      "event_id": "E04",
+      "activity": "MakePaperWindMill",
+      "filename": "DIY Safe Pinwheels - Pin Free Pinwheels That Really Spin!.mp4",
+      "source_duration_seconds": 59.755,
+      "standardized_duration_seconds": 59.667,
+      "segment_count": 30,
+      "source_sha256": "5e70d229a7bce5ce15d3caf61beb9e30bd2f66e8f78e44b33b5e42c493c05d76",
+      "reference_sha256": "6e556d587e904edcc5694484b3fc60a9cc3705386a80b879dcff1f13ba3acbc3"
+    },
+    {
+      "event_id": "E05",
+      "activity": "ReplaceDoorKnob",
+      "filename": "Install Door Locks - D\u00e9cor Moulding.mp4",
+      "source_duration_seconds": 144.578,
+      "standardized_duration_seconds": 144.083,
+      "segment_count": 72,
+      "source_sha256": "9d39def5cae9a1f49ace597b25f959c9ca0a964a4d632e2f2eb512c87fd98f6a",
+      "reference_sha256": "166b221cb63136e2536ea16cc55d5ab43f944b96322fee41ffab829a3a490847"
+    },
+    {
+      "event_id": "E06",
+      "activity": "ReplaceMemoryChip",
+      "filename": "How to upgrade RAM in your Apple iBook G4.mp4",
+      "source_duration_seconds": 145.924,
+      "standardized_duration_seconds": 145.833,
+      "segment_count": 73,
+      "source_sha256": "a5ed4b857978c5b57402815e5ec65296a64a11fa260ca3d3de431f377fec57db",
+      "reference_sha256": "77f253dea419b193e39db2f6966625803be9767c911fdc280be568cc981010fb"
+    },
+    {
+      "event_id": "E07",
+      "activity": "Sow",
+      "filename": "How to Grow a Mango Tree from Seed.mp4",
+      "source_duration_seconds": 134.848,
+      "standardized_duration_seconds": 134.833,
+      "segment_count": 68,
+      "source_sha256": "e39de9f98c3f8faf8d7f6e752a08ef93f9ca13c97521202ffcc3414a8c8be5b4",
+      "reference_sha256": "be521b2edea5b28c60c9a9c31925ac0ae9e6c4f27b1df13df2f2ec4f9c579779"
+    }
+  ]
+}

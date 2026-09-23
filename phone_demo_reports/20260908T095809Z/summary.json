@@ -1,0 +1,18 @@
+{
+  "run_id": "20260908T095809Z",
+  "source_type": "android",
+  "discovered": 20,
+  "copied": 20,
+  "failed": 0,
+  "duplicates_flagged": 0,
+  "total_bytes": 60864975,
+  "scan_warnings": [
+    "find: /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/pixuicache/.cache: Permission denied",
+    "find: /storage/emulated/0/Android/data/org.videolan.vlc/files/medialib: Permission denied"
+  ],
+  "dry_run": false,
+  "output_dir": "C:\\Users\\sumai\\OneDrive\\Desktop\\Vscode\\SMART LABS\\fairness_aware_event_reconstruction\\phone_demo_photos",
+  "report_dir": "C:\\Users\\sumai\\OneDrive\\Desktop\\Vscode\\SMART LABS\\fairness_aware_event_reconstruction\\phone_demo_reports\\20260908T095809Z",
+  "started_at": "2026-09-08T09:58:09.123500+00:00",
+  "finished_at": "2026-09-08T09:58:24.368272+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "dataset": "COIN",
+  "experiment_id": "experiment_01",
+  "created_at_utc": "2026-09-12T21:26:53.535167+00:00",
+  "random_seed": 20260913,
+  "source_video_count": 7,
+  "event_count": 7,
+  "clips_per_event": 3,
+  "final_clip_count": 21,
+  "source_videos_preserved": true,
+  "model_input": "scrambled_clips plus blind_manifest.csv",
+  "private_files": [
+    "PRIVATE_answer_key.csv",
+    "PRIVATE_expected_hierarchy.json"
+  ]
+}

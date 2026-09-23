@@ -1,0 +1,22 @@
+event_id,clip_id,true_order,step_label,start_seconds,end_seconds,duration_seconds
+E01,E01_C01,1,install the wheels for the base,11.0,17.0,6.0
+E01,E01_C02,2,assemble the cushion and the backrest,26.0,37.0,11.0
+E01,E01_C03,3,connect the chair and the base,38.0,41.0,3.0
+E02,E02_C01,1,fix the new string on the lower part of the guitar,67.0,73.0,6.0
+E02,E02_C02,2,fix the new string on the head of the guitar,74.0,78.0,4.0
+E02,E02_C03,3,adjust the tightness of the new string,79.0,86.0,7.0
+E03,E03_C01,1,soak them in water,64.0,70.0,6.0
+E03,E03_C02,2,dry strips,71.0,78.0,7.0
+E03,E03_C03,3,put in the oil to fry,80.0,84.0,4.0
+E04,E04_C01,1,fold the edges of the paper,12.0,16.0,4.0
+E04,E04_C02,2,cut along the edges,17.0,25.0,8.0
+E04,E04_C03,3,fold the squares inward and fix them,26.0,30.0,4.0
+E05,E05_C01,1,install the new pin board,122.5,127.5,5.0
+E05,E05_C02,2,install the new bolt,128.5,131.5,3.0
+E05,E05_C03,3,install the new door knob,132.0,136.5,4.5
+E06,E06_C01,1,remove the old memory chip,111.0,117.5,6.5
+E06,E06_C02,2,install the new memory chip,118.0,126.0,8.0
+E06,E06_C03,3,fit on the shell,126.5,129.5,3.0
+E07,E07_C01,1,sow on the soil,97.0,102.0,5.0
+E07,E07_C02,2,cover with some soil,103.0,108.0,5.0
+E07,E07_C03,3,water and fertilize the seeds,109.0,114.0,5.0

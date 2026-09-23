@@ -1,0 +1,14 @@
+You are given one silent composite video containing 509 shuffled two-second clips. Each clip has a persistent neutral identifier from C0001 to C0509.
+
+The clips came from exactly seven original source videos. Reconstruct those seven videos.
+
+Rules:
+1. Create exactly seven event groups.
+2. Assign every clip ID to exactly one event. Do not omit or repeat a clip.
+3. Group sizes are unknown and may differ.
+4. Within each event, arrange all assigned clip IDs in chronological order.
+5. Infer a short neutral description for each reconstructed event.
+6. Use only visible evidence; audio is unavailable.
+7. Return only JSON conforming to the supplied schema.
+
+The event IDs are arbitrary and do not need to match hidden reference IDs.

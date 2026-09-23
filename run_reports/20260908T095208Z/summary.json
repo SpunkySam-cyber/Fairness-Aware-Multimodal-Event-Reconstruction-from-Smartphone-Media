@@ -1,0 +1,15 @@
+{
+  "run_id": "20260908T095208Z",
+  "source_type": "android",
+  "discovered": 0,
+  "copied": 0,
+  "failed": 0,
+  "duplicates_flagged": 0,
+  "total_bytes": 0,
+  "scan_warnings": [],
+  "dry_run": true,
+  "output_dir": "C:\\Users\\sumai\\OneDrive\\Desktop\\Vscode\\SMART LABS\\fairness_aware_event_reconstruction\\collected_photos",
+  "report_dir": "C:\\Users\\sumai\\OneDrive\\Desktop\\Vscode\\SMART LABS\\fairness_aware_event_reconstruction\\run_reports\\20260908T095208Z",
+  "started_at": "2026-09-08T09:52:08.117044+00:00",
+  "finished_at": "2026-09-08T09:52:08.196887+00:00"
+}

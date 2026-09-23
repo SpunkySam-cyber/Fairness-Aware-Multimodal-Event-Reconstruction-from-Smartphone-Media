@@ -1,0 +1,4 @@
+﻿run_id,source_type,source_path,original_filename,destination_filename,extension,size_bytes,sha256,duplicate_of,source_still_exists,status,error
+20260906T105703Z,local-demo,C:\Users\sumai\OneDrive\Desktop\Vscode\SMART LABS\tmp\pdfs\manual_review\check\final-02.png,final-02.png,final-02.png,.png,348594,3b63c0dc817b4b9bf787d703c7e01deba715b99496d3077ae05029c2c960e1ab,,True,copied,
+20260906T105703Z,local-demo,C:\Users\sumai\OneDrive\Desktop\Vscode\SMART LABS\tmp\pdfs\manual_review\check\final-03.png,final-03.png,final-03.png,.png,24293,79273f92e85614a0a30bddb190b9f9ee771d587d58874483bde0168572619dfb,,True,copied,
+20260906T105703Z,local-demo,C:\Users\sumai\OneDrive\Desktop\Vscode\SMART LABS\tmp\pdfs\manual_review\check\page-02.png,page-02.png,page-02.png,.png,355409,0664d227ed190a6ae2c7c6a42906b5cc7cae555a788a9abca017da93c7cbcb54,,True,copied,

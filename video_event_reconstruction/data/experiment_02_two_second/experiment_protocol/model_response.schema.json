@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Two-second clip reconstruction response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "events"
+  ],
+  "properties": {
+    "events": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_id",
+          "event_description",
+          "ordered_clips",
+          "confidence"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "event_description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ordered_clips": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 509,
+            "items": {
+              "type": "string",
+              "pattern": "^C\\d{4}$"
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    }
+  }
+}

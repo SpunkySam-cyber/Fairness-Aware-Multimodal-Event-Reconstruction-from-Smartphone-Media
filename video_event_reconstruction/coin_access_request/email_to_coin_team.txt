@@ -1,0 +1,26 @@
+To: tys15@tsinghua.org.cn
+Subject: COIN dataset access request for academic event reconstruction research
+
+Dear COIN Dataset Team,
+
+I am working on an academic research project on multimodal event reconstruction from smartphone media under the supervision of [ADVISOR NAME] at [AFFILIATION].
+
+Please find attached the completed and signed COIN licence agreement. For our initial experiment, we require only the following seven COIN source videos rather than the full dataset:
+
+- wriANl6Ceqs (AssembleOfficeChair)
+- 1Mc2COIjx5k (ChangeGuitarStrings)
+- 1sffYOXq4Iw (MakeFrenchFries)
+- ShI_3qzmXJg (MakePaperWindMill)
+- jffmJdAD5uo (ReplaceDoorKnob)
+- GJzdgSRZFPo (ReplaceMemoryChip)
+- 6Uip8riRXSo (Sow)
+
+If providing only these selected files is not possible, please let us know how we can access the official archived dataset.
+
+Thank you.
+
+Kind regards,
+[YOUR FULL NAME]
+[TITLE OR ROLE]
+[AFFILIATION]
+[EMAIL ADDRESS]

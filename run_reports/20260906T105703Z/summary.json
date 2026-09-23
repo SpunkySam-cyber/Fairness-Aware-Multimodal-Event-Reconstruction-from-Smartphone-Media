@@ -1,0 +1,14 @@
+{
+  "run_id": "20260906T105703Z",
+  "source_type": "local-demo",
+  "discovered": 3,
+  "copied": 3,
+  "failed": 0,
+  "duplicates_flagged": 0,
+  "total_bytes": 728296,
+  "dry_run": false,
+  "output_dir": "C:\\Users\\sumai\\OneDrive\\Desktop\\Vscode\\SMART LABS\\fairness_aware_event_reconstruction\\collected_photos",
+  "report_dir": "C:\\Users\\sumai\\OneDrive\\Desktop\\Vscode\\SMART LABS\\fairness_aware_event_reconstruction\\run_reports\\20260906T105703Z",
+  "started_at": "2026-09-06T10:57:03.176640+00:00",
+  "finished_at": "2026-09-06T10:57:03.205684+00:00"
+}

@@ -1,0 +1,15 @@
+﻿directory,model,provider,finish_reason,content_returned,prompt_tokens,completion_tokens,reasoning_tokens,cost_usd
+data\experiment_01\model_runs\gemini-flash\run_01_attempt_01,google/gemini-3.8-flash,Google AI Studio,stop,True,7799,800,0,0.00884925
+data\experiment_01\model_runs\gemini-flash\run_02_attempt_01,google/gemini-3.8-flash,Google AI Studio,stop,True,7799,807,0,0.0088755
+data\experiment_01\model_runs\gemini-flash\run_03_attempt_01,google/gemini-3.8-flash,Google AI Studio,stop,True,7799,658,0,0.005967075
+data\experiment_01\model_runs\gemini-pro\run_01_attempt_02,google/gemini-3.1-pro-preview,Google AI Studio,stop,True,7799,759,0,0.024706
+data\experiment_01\model_runs\gemini-pro\run_02_attempt_01,google/gemini-3.1-pro-preview,Google,stop,True,8144,834,0,0.026296
+data\experiment_01\model_runs\gemini-pro\run_03_attempt_01,google/gemini-3.1-pro-preview,Google,stop,True,8144,832,0,0.0130564
+data\experiment_01\model_runs\qwen-max\run_01_attempt_02,qwen/qwen3.8-max-0902,Alibaba,length,False,69257,3000,3000,0.156514
+data\experiment_01\model_runs\qwen-max\run_01_attempt_03,qwen/qwen3.8-max-0902,Alibaba,stop,True,68412,4121,2900,0.16155
+data\experiment_01\model_runs\qwen-max\run_02_attempt_01,qwen/qwen3.8-max-0902,Alibaba,stop,True,68412,3608,2393,0.158472
+data\experiment_01\model_runs\qwen-max\run_03_attempt_01,qwen/qwen3.8-max-0902,Alibaba,stop,True,68412,3170,1917,0.154724
+data\experiment_01\model_runs\seed-turbo\run_01_attempt_01,bytedance-seed/seed-2-1-turbo,Seed,length,False,46241,5000,5000,0.0356205
+data\experiment_01\model_runs\seed-turbo\run_01_attempt_02,bytedance-seed/seed-2-1-turbo,Seed,stop,True,46240,1101,0,0.0258725
+data\experiment_01\model_runs\seed-turbo\run_02_attempt_01,bytedance-seed/seed-2-1-turbo,Seed,stop,True,46240,1119,0,0.0259175
+data\experiment_01\model_runs\seed-turbo\run_03_attempt_01,bytedance-seed/seed-2-1-turbo,Seed,stop,True,46240,1058,0,0.025765

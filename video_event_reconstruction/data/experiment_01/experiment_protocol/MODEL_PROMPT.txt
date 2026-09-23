@@ -1,0 +1,17 @@
+You are given 21 shuffled, silent video clips identified only as V001 through V021.
+
+Your task is to reconstruct the underlying events.
+
+Rules:
+1. Create exactly 7 events.
+2. Assign exactly 3 clips to each event.
+3. Use every clip exactly once. Do not omit or repeat any clip.
+4. Within each event, arrange its 3 clips in chronological order.
+5. Infer a short, neutral description of the complete event.
+6. Base your decisions only on visible evidence in the supplied clips.
+7. For each of the two transitions in an event, state the visible change or prerequisite that supports the order.
+8. Confidence must be a number from 0.0 to 1.0.
+9. Return only JSON that conforms to the supplied schema. Do not add Markdown or explanatory text outside the JSON.
+
+The event IDs in your response are arbitrary labels and do not need to match any hidden reference IDs.
+
